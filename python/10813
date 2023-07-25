@@ -1,0 +1,12 @@
+m, n = map(int, input().split())
+
+n_l = [x+1 for x in range(m)]
+
+for _ in range(n):
+    a,b = map(int, input().split())
+    temp = n_l[a-1]
+    n_l[a-1] = n_l[b-1]
+    n_l[b-1] = temp
+
+for x in n_l:
+    print(x, end=' ')
