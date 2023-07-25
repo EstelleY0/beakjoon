@@ -1,0 +1,8 @@
+n_l = [x+1 for x in range(30)]
+
+for _ in range(28):
+    n_l.remove(int(input()))
+n_l.sort()
+
+for x in n_l:
+    print(x)
