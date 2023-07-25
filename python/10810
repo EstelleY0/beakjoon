@@ -1,0 +1,9 @@
+a, b = map(int, input().split())
+
+n_l = ['0' for _ in range(a)]
+
+for _ in range(b):
+    i, j, k = map(int, input().split())
+    for ind in range(i, j+1):
+        n_l[ind-1] = str(k)
+print(' '.join(n_l))
