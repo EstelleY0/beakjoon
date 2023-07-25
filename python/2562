@@ -1,0 +1,10 @@
+n_l = []
+
+while True:
+    try:
+        n_l.append(int(input()))
+    except:
+        break
+
+print(max(n_l))
+print(1+n_l.index(max(n_l)))
